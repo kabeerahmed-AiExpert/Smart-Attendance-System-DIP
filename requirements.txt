@@ -1,0 +1,31 @@
+# Smart Attendance System with DIP Lab: Streamlit + FaceNet + OpenCV
+# ===================================================================
+# Install: pip install -r requirements.txt
+# (Python 3.10 or 3.11 recommended, TensorFlow 2.15 does not support 3.12)
+
+# Web framework
+streamlit>=1.30.0,<1.50.0
+tornado>=6.0.0
+
+# Core ML
+tensorflow-cpu==2.15.1; sys_platform != "darwin"
+tensorflow==2.15.1; sys_platform == "darwin"
+numpy>=1.21.0,<2.0
+scipy>=1.7.0
+
+# Face detection
+mtcnn>=0.1.1
+
+# FaceNet embeddings
+keras-facenet>=0.3.2
+
+# Image processing / DIP Lab
+opencv-python-headless>=4.5.0
+Pillow>=9.0.0
+matplotlib>=3.5.0
+
+# Data display
+pandas>=1.5.0
+
+# Tests (optional): python -m pytest tests -q
+# pytest>=7.0

@@ -1,0 +1,20 @@
+Scenario,Method,PSNR vs original (dB),Brightness,Contrast,Entropy
+poor_lighting,"(damaged image, no repair)",5.5,51.7,22.5,5.74
+poor_lighting,Gamma 0.5,10.03,109.9,31.1,5.97
+poor_lighting,Histogram equalization,13.41,130.7,75.7,5.74
+poor_lighting,"CLAHE (clip 3, 8x8)",8.04,88.4,41.3,7.27
+poor_lighting,Contrast stretching,31.61,168.7,79.1,7.48
+gaussian_noise,"(damaged image, no repair)",21.21,171.5,74.2,7.61
+gaussian_noise,Gaussian filter 5x5,21.68,171.5,67.5,7.43
+gaussian_noise,Median filter 5x5,19.75,174.5,69.8,7.51
+gaussian_noise,Bilateral filter 5,26.52,171.8,72.7,7.34
+gaussian_noise,Box filter 5x5,19.43,171.5,65.7,7.43
+salt_pepper_noise,"(damaged image, no repair)",17.25,171.3,79.2,7.41
+salt_pepper_noise,Median filter 3x3,22.72,174.7,72.8,7.44
+salt_pepper_noise,Median filter 5x5,19.8,176.0,71.5,7.42
+salt_pepper_noise,Gaussian filter 5x5,21.07,171.3,67.1,7.59
+salt_pepper_noise,Bilateral filter 5,17.28,171.3,78.3,7.42
+blur,"(damaged image, no repair)",19.32,173.6,66.3,7.55
+blur,"Unsharp mask (a=1, r=2)",20.36,173.6,68.7,7.56
+blur,"Unsharp mask (a=2, r=2)",21.0,173.6,71.4,7.56
+blur,Laplacian sharpen (0.5),21.05,173.6,69.4,7.55

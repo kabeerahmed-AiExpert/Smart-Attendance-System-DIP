@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit specific
+.streamlit/
+.keras/
+.matplotlib/
+.pytest_cache/
+.DS_Store
+
+# Generated project reports (keep repo lightweight for Streamlit Cloud)
+Smart_Attendance_System_DIP_Project_Report.pdf
+Smart_Attendance_System_DIP_Project_Report.docx
+
+# Database
+*.db
+*.sqlite3
+
+# Ignore datasets if they are huge (but output is small so maybe keep it)
+# We will keep the output folder so embeddings are pushed to cloud!

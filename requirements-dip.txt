@@ -1,0 +1,11 @@
+# Minimal requirements for the DIP Lab + attendance records page (NO TensorFlow).
+# Works on any recent Python (including 3.12 / 3.13 / 3.14).
+#   pip install -r requirements-dip.txt
+#   python -m streamlit run app.py
+# Face recognition (Camera / Upload pages) needs the full requirements.txt on Python 3.10/3.11.
+streamlit>=1.30.0
+numpy
+opencv-python-headless>=4.5.0
+Pillow>=9.0.0
+matplotlib>=3.5.0
+pandas>=1.5.0
